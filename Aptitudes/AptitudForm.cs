@@ -206,5 +206,10 @@ namespace Aptitudes
             }
             Estado.Ejecutores = ejecutorComboBox.Items.Cast<string>().ToList();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            (new PrintForm(_aptitud)).Show();
+        }
     }
 }
